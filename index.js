@@ -36,7 +36,8 @@ $(document).scroll(function () {
     }
 });
 
-$(window).on('load', function() { // makes sure the whole site is loaded
+$(window).on('load', function() {
+  console.log('trigg')
     $('#preloader').delay(4200).fadeOut('slow'); // will fade out the white DIV that covers the website.
     $('body').delay(4200).css({'overflow':'visible'});
     $("#status").delay(3200).animate({
