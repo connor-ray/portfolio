@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Oswald");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 2px;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.landing {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-image: url(coffee-background.jpg);
+  background-size: cover;
+  z-index: 999;
+}
+
+#header {
+  position: fixed;
+  height: 80px;
+  background: #5FB49C;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  z-index: 998;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.job {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  text-align: center;
+  width: 30%;
+  height: 100%;
+  background: black;
+  top: 0;
+  color: white;
+}
+
+.job h3 {
+  padding-top: 20px;
+}
+
+.projects {
+  position: relative;
+  height: 95vh;
+  background: #5FB49C;
+}
+
+.projContainer {
+  width: 60%;
+  height: 80%;
+  position: absolute;
+  top: 75px;
+  left: 80px;
+  text-align: center;
+}
+
+.titleP {
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+.hideTitle {
+  display: none;
+}
+
+.box1 {
+  position: absolute;
+  right: 0;
+  width: 390px;
+  height: 255px;
+  border: solid 12px black;
+  background: white;
+}
+
+.box2 {
+  position: absolute;
+  left: 0;
+  width: 390px;
+  height: 255px;
+  border: solid 12px black;
+  background: white;
+
+}
+
+.descP {
+  padding: 20px;
+  padding-top: 0;
+  margin: 0 auto;
+  margin-top: 5px;
+  font-size: 14px;
+  width: 80%;
+}
+
+.box3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 390px;
+  height: 255px;
+  border: solid 12px black;
+  background: white;
+
+}
+
+.box4 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 390px;
+  height: 255px;
+  border: solid 12px black;
+  background: white;
+
+}
+
+.coverP {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .4;
+  top: 0;
+  display: none;
+}
+
+.linkP {
+  font-size: 200px;
+  position: absolute;
+  top: 20px;
+  display: none;
+  color: black;
+  left: 95px;
+}
+
+.showIt {
+  display: block;
+}
+
+.skills {
+  position: relative;
+  height: 100vh;
+  background: #5FB49C;
+}
+
+.logo {
+  position: relative;
+  font-size: 25px;
+  height: 100%;
+  width: 70%;
+  background: #5FB49C;
+  color: white;
+}
+
+.logoH {
+  padding-left: 20px;
+  padding-top: 0;
+  width: 100px;
+  height: 90%;
+}
+
+.logoHL {
+  padding-left: 20px;
+  padding-top: 0;
+}
+
+.name {
+  height: 100vh;
+  position: absolute;
+  padding-top: 110px;
+  right: 0;
+  width: 30%;
+  background: white;
+  text-align: center;
+}
+
+#myName {
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-size: 60px;
+  letter-spacing: 6px;
+  line-height: 100px;
+  position: relative;
+  width: 85%;
+  border-bottom: solid 2px black;
+  padding: 0;
+  left: 35px;
+  text-align: center;
+  top: 90px;
+}
+
+#myPort {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-size: 60px;
+  letter-spacing: 6px;
+  line-height: 100px;
+  position: relative;
+  width: 85%;
+  border-bottom: solid 2px white;
+  padding: 0;
+  left: 35px;
+  text-align: center;
+  top: 240px;
+}
+
+#myJob {
+  font-size: 35px;
+}
+
+.myI {
+  font-size: 50px;
+}
+
+.myP {
+  font-size: 50px;
+}
+
+#headcontainer {
+  top: 90px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  color: black;
+}
+
+.skillType {
+  margin-bottom: 80px;
+  color: #5FB49C;
+}
+
+.symbols {
+  margin-top: 130px;
+  color: black;
+  height: 54%;
+}
+
+.symbolsP {
+  margin-top: 260px;
+  color: white;
+  height: 54%;
+}
+
+.myI:hover {
+  color: #AA635F;
+}
+
+#sqr {
+  position: absolute;
+  right: -12px;
+  top: 15px;
+  color: black;
+}
+
+#squareL {
+  font-size: 45px;
+}
+
+.symDesc {
+  display: none;
+  color: #AA635F;
+}
+
+#skillD {
+  position: absolute;
+  right: 110px;
+  font-size: 20px;
+  top: 585px;
+}
+
+#portD {
+  position: absolute;
+  right: 70px;
+  font-size: 20px;
+  top: 527px;
+}
+
+.show {
+  display: block;
+}
+
+.myI:hover .symDesc {
+  color: black;
+}
+
+#firstN {
+  font-size: 145px;
+}
+
+.nav {
+  height: 100vh;
+  position: absolute;
+  background: black;
+  text-align: center;
+  right: 0;
+  width: 30%;
+}
+
+.nav2 {
+  height: 100vh;
+  position: absolute;
+  background: black;
+  right: 0;
+  width: 30%;
+}
+
+/* eloader */
+
+#eloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: black; /* change if the mask should have another color then white */
+    z-index:9999; /* makes sure it stays on top */
+}
+
+#status {
+    margin-left: 47%;
+    margin-top: 23%;
+    position:absolute;
+    font-size: 33px;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
