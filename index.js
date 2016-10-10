@@ -19,20 +19,58 @@ $(function(){
 
 $(document).scroll(function () {
     var y = $(this).scrollTop();
-    if (y > 700) {
-        $(".logo").css("background","black");
-        $(".job").css("background","white");
-        $(".logoH").css("color","white");
-        $("#jobH").css("color","black");
-        $("#sqr").css("color","white");
+      console.log(y);
+    if (y > 2480) {
+      $(".nav").css({"top":"1780px", "position":"absolute"});
     }
-    else if (y < 700) {
-        $(".logo").css("background","#5FB49C");
-        $(".job").css("background","black");
+    else if (y < 2480) {
+      $(".nav").css({"top":"80px", "position":"fixed"});
+    }
+    if (y < 700) {
+      $("#jbl").show();
+    }
+    else if (y > 700) {
+      console.log('more 700')
+      $(".job").animate({
+        width: "80px"
+      }, 500);
+      $("#jbl").hide();
+      $('.aboutS').addClass('showA');
+    }
+
+    if (y > 2240) {
+      $(".F").css("color","black");
+      $(".V").css("color","black");
+      $(".D").css("color","#E63946");
+    }
+    if (y > 1480 && y < 2240) {
+      $(".F").css("color","black");
+      $(".V").css("color","#E63946");
+      $(".D").css("color","black");
+    }
+
+    else if (y > 700 && y < 1480) {
+        $(".logo").css("background","black");
+        $(".job").css("background","#E63946");
         $(".logoH").css("color","white");
         $("#jobH").css("color","white");
-        $("#sqr").css("color","black");
+        $("#sqr").css("color","white");
+        $(".nav").css({"top":"80px", "position":"fixed"});
+        $(".F").css("color","#E63946");
+        $(".V").css("color","black");
+        $(".D").css("color","black");
 
+    }
+    else if (y < 700) {
+        $(".logo").css("background","#E6EAEF");
+        $(".job").css("background","black");
+        $(".logoH").css("color","black");
+        $("#jobH").css("color","white");
+        $("#sqr").css("color","black");
+        $(".nav").css({"top":"0", "position":"absolute"});
+        $(".F").css("color","black");
+        $(".V").css("color","black");
+        $(".D").css("color","black");
     }
 });
 
