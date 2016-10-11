@@ -26,13 +26,20 @@ $(document).scroll(function () {
     else if (y < 2480) {
       $(".nav").css({"top":"80px", "position":"fixed"});
     }
+
+
     if (y < 700) {
+      console.log('less 700')
       $("#jbl").show();
+      $(".job").animate({
+        width: "30%"
+      }, 500);
     }
+
     else if (y > 700) {
       console.log('more 700')
       $(".job").animate({
-        width: "80px"
+        width: "10%"
       }, 500);
       $("#jbl").hide();
       $('.aboutS').addClass('showA');
@@ -62,7 +69,7 @@ $(document).scroll(function () {
 
     }
     else if (y < 700) {
-        $(".logo").css("background","#E6EAEF");
+        $(".logo").css("background","white");
         $(".job").css("background","black");
         $(".logoH").css("color","black");
         $("#jobH").css("color","white");
@@ -75,7 +82,6 @@ $(document).scroll(function () {
 });
 
 $(window).on('load', function() {
-  console.log('trigg')
     $('#preloader').delay(4200).fadeOut('slow'); // will fade out the white DIV that covers the website.
     $('body').delay(4200).css({'overflow':'visible'});
     $("#status").delay(3200).animate({

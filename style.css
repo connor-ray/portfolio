@@ -14,9 +14,13 @@ body {
 }
 
 .landing {
-  width: 100vw;
+  width: 95%;
   height: 100vh;
+  margin: 0 auto;
+  margin-top: 8%;
   top: 0;
+  border: solid 2px black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   background-image: url(coffee-background.jpg);
   background-size: cover;
   z-index: 999;
@@ -30,7 +34,7 @@ body {
   margin: 0;
   top: 0;
   z-index: 998;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.3), 0 3px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   overflow: hidden;
 }
 
@@ -49,8 +53,9 @@ h1, h2, h3, h4 {
   height: 100%;
   text-align: center;
   width: 30%;
-  height: 100%;
+  height: 98%;
   background: black;
+  border: solid 2px black;
   top: 0;
   color: #E6EAEF;
 }
@@ -59,9 +64,14 @@ h1, h2, h3, h4 {
 }
 
 .projects {
-  position: absolute;
+  position: relative;
   height: 320vh;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 3%;
   background: #E6EAEF;
+  border: solid 2px black;
+  box-shadow: 0 -3px 6px rgba(0,0,0,0.16), 0 -3px 6px rgba(0,0,0,0.23);
 }
 
 .seg {
@@ -82,7 +92,7 @@ h1, h2, h3, h4 {
 
 .showA {
   opacity: 1;
-  transition: .5s;
+  transition: 2s;
 }
 
 .projS {
@@ -231,10 +241,11 @@ h1, h2, h3, h4 {
 .logo {
   position: relative;
   font-size: 25px;
-  height: 100%;
+  height: 98%;
   width: 100%;
-  background: #E6EAEF;
+  background: white;
   color: black;
+  border-bottom: solid 2px black;
 }
 
 .logoH {
@@ -253,11 +264,12 @@ h1, h2, h3, h4 {
 
 .name {
   height: 100vh;
-  position: absolute;
-  padding-top: 200px;
-  right: 0;
+  position: relative;
+  float: right;
+  padding-top: 0;
   width: 30%;
-  background: #D2D6DB;
+  background: white;
+  border-left: solid 2px black;
   text-align: center;
 }
 
@@ -265,7 +277,8 @@ h1, h2, h3, h4 {
   color: black;
   text-transform: uppercase;
   font-family: 'Oswald';
-  font-size: 60px;
+  font-size: 55px;
+  margin-top: 40%;
   letter-spacing: 6px;
   line-height: 100px;
   position: relative;
@@ -332,6 +345,7 @@ h1, h2, h3, h4 {
   width: 70px;
   background: white;
   border-radius: 50%;
+  border: solid 2px black;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
