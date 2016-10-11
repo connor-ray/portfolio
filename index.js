@@ -1,6 +1,6 @@
 $(function(){
   $(".skillType").delay(4200).typed({
-      strings: ["Builder.", "Designer.", "Artist.", "Thinker.", "Creator.", ],
+      strings: ["Builder.", "Designer.", "Artist.", "Creator.", ],
       typeSpeed: 80,
       backSpeed: 30,
       loop: true
@@ -20,28 +20,14 @@ $(function(){
 $(document).scroll(function () {
     var y = $(this).scrollTop();
       console.log(y);
-    if (y > 2480) {
-      $(".nav").css({"top":"1780px", "position":"absolute"});
+    if (y > 2610 || y < 830) {
+      $(".nav").removeClass('showA');
     }
-    else if (y < 2480) {
-      $(".nav").css({"top":"80px", "position":"fixed"});
-    }
-
-
-    if (y < 700) {
-      console.log('less 700')
-      $("#jbl").show();
-      $(".job").animate({
-        width: "30%"
-      }, 500);
+    if (y < 2610 && y > 830) {
+      $(".nav").addClass('showA');
     }
 
-    else if (y > 700) {
-      console.log('more 700')
-      $(".job").animate({
-        width: "10%"
-      }, 500);
-      $("#jbl").hide();
+    if (y > 500) {
       $('.aboutS').addClass('showA');
     }
 
@@ -57,24 +43,12 @@ $(document).scroll(function () {
     }
 
     else if (y > 700 && y < 1480) {
-        $(".logo").css("background","black");
-        $(".job").css("background","#E63946");
-        $(".logoH").css("color","white");
-        $("#jobH").css("color","white");
-        $("#sqr").css("color","white");
-        $(".nav").css({"top":"80px", "position":"fixed"});
         $(".F").css("color","#E63946");
         $(".V").css("color","black");
         $(".D").css("color","black");
 
     }
     else if (y < 700) {
-        $(".logo").css("background","white");
-        $(".job").css("background","black");
-        $(".logoH").css("color","black");
-        $("#jobH").css("color","white");
-        $("#sqr").css("color","black");
-        $(".nav").css({"top":"0", "position":"absolute"});
         $(".F").css("color","black");
         $(".V").css("color","black");
         $(".D").css("color","black");
@@ -87,6 +61,7 @@ $(window).on('load', function() {
     $("#status").delay(3200).animate({
         marginLeft: "0",
         marginTop: "0",
+        paddingLeft: "30px"
     }, 1000 );
     $("#status").delay(3200).css({"overflow":"hidden"});
 })
