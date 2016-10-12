@@ -72,6 +72,11 @@ $(document).ready( function() {
     $(desc).toggleClass('show');
   });
 
+  $(".symbolsP").hover( function() {
+    var obj = $(this).siblings()
+    $(obj).toggleClass('show');
+  });
+
   $(".pr").hover( function() {
     var children = $(this).children()
     var cover = children[2]

@@ -10,7 +10,7 @@ body {
   width: 100%;
   margin: 0;
   overflow: hidden;
-  background-color: #E63946;
+  background-color: #6B818C;
 }
 
 .landing {
@@ -64,7 +64,7 @@ h1, h2, h3, h4 {
 
 .projects {
   position: relative;
-  height: 320vh;
+  height: 305vh;
   width: 95%;
   margin: 0 auto;
   margin-top: 3%;
@@ -104,7 +104,28 @@ h1, h2, h3, h4 {
   margin-top: 5%;
   font-size: 20px;
   font-family: 'Raleway';
-  text-transform: lowercase;
+  text-transform: none;
+}
+
+.aboutS p {
+  font-size: 25px;
+  width: 100%;
+  margin-top: 5%;
+
+}
+
+.photoContainer {
+  background-image: url("./prof.JPG");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  border: solid 2px black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+
 }
 
 .contactS {
@@ -198,8 +219,8 @@ h1, h2, h3, h4 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: black;
-  opacity: .4;
+  background: #6B818C;
+  opacity: .3;
   top: 0;
   display: none;
 }
@@ -345,6 +366,16 @@ h1, h2, h3, h4 {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+.symCover {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: #6B818C;
+  opacity: .3;
+  display: none;
+  position: absolute;
+}
+
 .myI:hover {
   color: #AA635F;
 }
@@ -433,6 +464,41 @@ h1, h2, h3, h4 {
 .showA {
   opacity: 1;
   transition: 2s;
+}
+
+.logoWr {
+  display: inline-block;
+}
+
+.ic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: solid 2px black;
+  display: inline-block;
+  margin: 20px;
+  margin-top: 80px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.githhubI {
+  background-image: url('./github.png');
+  background-size: cover;
+}
+
+.instaI {
+  background-image: url('./insta.png');
+  background-size: cover;
+}
+
+.linkedinI {
+  background-image: url('./linked.png');
+  background-size: cover;
+}
+
+.resumeI {
+  background-image: url('./resume.png');
+  background-size: cover;
 }
 
 a:link {
