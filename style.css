@@ -10,14 +10,13 @@ body {
   width: 100%;
   margin: 0;
   overflow: hidden;
-  background-color: #EDF3F7;
+  background-color: #F4FAFF;
 }
 
 .landing {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  margin-top: 5%;
   border-bottom: solid 2px black;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   background-image: url(coffee-background.jpg);
@@ -32,9 +31,11 @@ body {
   margin: 0;
   top: 0;
   z-index: 998;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   overflow: hidden;
-  transition: 1s;
+}
+
+.showH {
+  background: #F4FAFF;
 }
 
 h1, h2, h3, h4 {
@@ -51,25 +52,24 @@ h1, h2, h3, h4 {
   right: 0px;
   height: 100%;
   text-align: center;
-  width: 20%;
+  width: 16%;
   height: 98%;
-  background: white;
-  top: 0;
+  top: 10px;
   color: black;
   transition: 1s;
 }
 .job h3 {
   padding-top: 20px;
+  font-size: 17px;
 }
 
 .projects {
   position: relative;
-  height: 360vh;
+  height: 390vh;
   width: 100%;
   top: 0;
   margin-top: 2%;
-  background: #EDF3F7;
-  border-bottom: solid 2px black;
+  background: #F4FAFF;
   z-index: 99;
 }
 
@@ -81,21 +81,33 @@ h1, h2, h3, h4 {
 }
 
 .aboutS {
-  height: 60vh;
-  width: 60%;
+  height: 78vh;
+  width: 68%;
   position: relative;
   opacity: 0;
   margin-bottom: 10%;
-  padding-top: 10%;
+  margin-top: 10%;
+  background: #E8EEF2;
+  border: solid 2px black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .projS {
   height: 160vh;
+  width: 68%;
   padding-top: 100px;
+  background: #E8EEF2;
+  border: solid 2px black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .hireS {
-  height: 100vh;
+  height: 70vh;
+  width: 68%;
+  margin-top: 160px;
+  background: #E8EEF2;
+  border: solid 2px black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .mainP {
@@ -110,7 +122,7 @@ h1, h2, h3, h4 {
 
 .aboutS p {
   font-size: 25px;
-  width: 100%;
+  width: 70%;
   margin-top: 5%;
 
 }
@@ -132,7 +144,8 @@ h1, h2, h3, h4 {
 .contactS {
   position: relative;
   height: 60vh;
-  margin-top: 80px;
+  width: 100%;
+  padding-top: 100px;
 }
 
 .projContainer {
@@ -210,7 +223,7 @@ h1, h2, h3, h4 {
   width: 100%;
   height: 100%;
   background: #6B818C;
-  opacity: .3;
+  opacity: .6;
   top: 0;
   display: none;
 }
@@ -237,7 +250,6 @@ h1, h2, h3, h4 {
 
 .showIt {
   display: block;
-  border: solid 2px #5FB49C;
 }
 
 .skills {
@@ -251,13 +263,11 @@ h1, h2, h3, h4 {
   font-size: 25px;
   height: 98%;
   width: 100%;
-  background: white;
   color: black;
-  border-bottom: solid 2px black;
 }
 
 .logoH {
-  padding-left: 50px;
+  padding-left: 30px;
   padding-top: 0;
   font-family: 'Oswald';
   width: 100px;
@@ -276,7 +286,7 @@ h1, h2, h3, h4 {
   float: right;
   padding-top: 0;
   width: 30%;
-  background: white;
+  background: #E8EEF2;
   border-left: solid 2px black;
   text-align: center;
   transition: 1s;
@@ -318,6 +328,10 @@ h1, h2, h3, h4 {
   font-size: 35px;
 }
 
+#job-icon {
+  font-size: 17px;
+}
+
 .myI {
   font-size: 50px;
 }
@@ -356,6 +370,11 @@ h1, h2, h3, h4 {
   border-radius: 50%;
   border: solid 2px black;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.symbolsP:hover {
+  background: lightgrey;
+  cursor: pointer;
 }
 
 .symCover {
@@ -494,6 +513,8 @@ h1, h2, h3, h4 {
   display: inline-block;
 }
 
+
+
 /*.quotes {
   font-size: 40px;
 }*/
@@ -511,6 +532,12 @@ h1, h2, h3, h4 {
   margin: 40px;
   margin-top: 80px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: .4s;
+}
+
+.ic:hover  {
+  opacity: .5;
+  transition: .4s;
 }
 
 .githhubI {
@@ -531,6 +558,21 @@ h1, h2, h3, h4 {
 .resumeI {
   background-image: url('./resume.png');
   background-size: cover;
+}
+
+footer {
+  height: 240px;
+  width: 100%;
+  background: #495054;
+  bottom: 0;
+}
+
+.copyr {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
+  text-transform: none;
 }
 
 a:link {

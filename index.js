@@ -20,11 +20,17 @@ $(function(){
 $(document).scroll(function () {
     var y = $(this).scrollTop();
       console.log(y);
-    if (y > 2900 || y < 700) {
+    if (y > 3200 || y < 700) {
       $(".nav").removeClass('showA');
     }
-    if (y < 2900 && y > 700) {
+    if (y < 3200 && y > 700) {
       $(".nav").addClass('showA');
+    }
+    if (y > 790) {
+      $("#header").addClass('showH');
+    }
+    else if (y < 790) {
+      $("#header").removeClass('showH');
     }
 
     if (y > 500) {
@@ -72,11 +78,6 @@ $(document).ready( function() {
     $(desc).toggleClass('show');
   });
 
-  $(".symbolsP").hover( function() {
-    var obj = $(this).siblings()
-    $(obj).toggleClass('show');
-  });
-
   $(".pr").hover( function() {
     var children = $(this).children()
     var cover = children[2]
@@ -93,4 +94,15 @@ $(document).ready( function() {
   sr.reveal('#lo3', {duration: 300, delay: 400,});
   sr.reveal('#lo4', {duration: 300, delay: 600,});
 
+  $("#aboutAnc").click( function(){
+    $(window).scrollTo(800, 800);
+  });
+
+  $("#projAnc").click( function(){
+    $(window).scrollTo(1580, 800);
+  });
+
+  $("#contactAnc").click( function(){
+    $(window).scrollTo(3070, 800);
+  });
 });
