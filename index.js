@@ -20,10 +20,10 @@ $(function(){
 $(document).scroll(function () {
     var y = $(this).scrollTop();
       console.log(y);
-    if (y > 2610 || y < 830) {
+    if (y > 2900 || y < 700) {
       $(".nav").removeClass('showA');
     }
-    if (y < 2610 && y > 830) {
+    if (y < 2900 && y > 700) {
       $(".nav").addClass('showA');
     }
 
@@ -82,7 +82,15 @@ $(document).ready( function() {
     var cover = children[2]
     var link = children[3]
     $(cover).toggleClass('showIt');
-    $(link).toggleClass('showIt');
   });
+
+  window.sr = ScrollReveal();
+  sr.reveal('.box1', {duration: 700, delay: 200,});
+  sr.reveal('.box2', {duration: 700, delay: 200,});
+  sr.reveal('.box3', {duration: 700, delay: 200,});
+  sr.reveal('#lo1', {duration: 300, delay: 0,});
+  sr.reveal('#lo2', {duration: 300, delay: 200,});
+  sr.reveal('#lo3', {duration: 300, delay: 400,});
+  sr.reveal('#lo4', {duration: 300, delay: 600,});
 
 });
