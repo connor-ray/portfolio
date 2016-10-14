@@ -67,7 +67,7 @@ $(window).on('load', function() {
     $("#status").delay(3200).animate({
         marginLeft: "0",
         marginTop: "0",
-        paddingLeft: "30px"
+        paddingLeft: "10px"
     }, 1000 );
     $("#status").delay(3200).css({"overflow":"hidden"});
 })
