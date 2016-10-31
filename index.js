@@ -20,10 +20,10 @@ $(function(){
 $(document).scroll(function () {
     var y = $(this).scrollTop();
       console.log(y);
-    if (y > 3200 || y < 700) {
+    if (y > 3350 || y < 700) {
       $(".nav").removeClass('showA');
     }
-    if (y < 3200 && y > 700) {
+    if (y < 3350 && y > 700) {
       $(".nav").addClass('showA');
     }
     if (y > 790) {
@@ -37,12 +37,12 @@ $(document).scroll(function () {
       $('.aboutS').addClass('showA');
     }
 
-    if (y > 2240) {
+    if (y > 2940) {
       $(".F").css("color","black");
       $(".V").css("color","black");
       $(".D").css("color","#E63946");
     }
-    if (y > 1480 && y < 2240) {
+    if (y > 1480 && y < 2940) {
       $(".F").css("color","black");
       $(".V").css("color","#E63946");
       $(".D").css("color","black");
@@ -103,6 +103,6 @@ $(document).ready( function() {
   });
 
   $("#contactAnc").click( function(){
-    $(window).scrollTo(3070, 800);
+    $(window).scrollTo(3370, 800);
   });
 });

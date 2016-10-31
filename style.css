@@ -65,7 +65,7 @@ h1, h2, h3, h4 {
 
 .projects {
   position: relative;
-  height: 390vh;
+  height: 420vh;
   width: 100%;
   top: 0;
   margin-top: 2%;
@@ -93,7 +93,7 @@ h1, h2, h3, h4 {
 }
 
 .projS {
-  height: 160vh;
+  height: 200vh;
   width: 68%;
   padding-top: 100px;
   background: #E8EEF2;
@@ -167,6 +167,18 @@ h1, h2, h3, h4 {
 
 .hideTitle {
   display: none;
+}
+
+.box0 {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  width: 80%;
+  height: 300px;
+  border: solid 2px black;
+  border-radius: 1%;
+  background: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .box1 {
@@ -461,6 +473,11 @@ h1, h2, h3, h4 {
 
 #pimg {
   background-image: url('./partner.png');
+  background-size: cover;
+}
+
+#doimg {
+  background-image: url('./dono.png');
   background-size: cover;
 }
 
