@@ -10,7 +10,7 @@ body {
   width: 100%;
   margin: 0;
   overflow: hidden;
-  background-color: #E63946;
+  background-image: url('./pattern.png');
 }
 
 .landing {
